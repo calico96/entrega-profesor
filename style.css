@@ -1,0 +1,202 @@
+﻿:root{--primario:#D82035;--primario-claro:#FFE5E8;--secundario:#FFFFFF;--negro:#FFF9F8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--negro);font-family:Montserrat;color:#fff;overflow-x:hidden}
+.bg-glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 30%, rgba(239,35,55,0.15) 0%, transparent 40%),radial-gradient(circle at 85% 70%, rgba(255,255,255,0.12) 0%, transparent 40%),#080808}
+.header{width:92%;max-width:1250px;margin:18px auto 0;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;background:linear-gradient(180deg,rgba(18,18,18,0.9),rgba(8,8,8,0.9));border:1px solid rgba(239,35,55,0.25);border-radius:14px;box-shadow:0 0 25px rgba(239,35,55,0.15)}
+
+.logo{display:flex;align-items:center;gap:12px}
+.logo-img{width:125px;height:auto;max-height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(239,35,55,0.35));border-radius:8px}
+.logo-text b{display:block;font-family:'Inter',sans-serif;line-height:0.9;font-size:0.85rem;color:var(--primario-claro)}
+.logo-text b:last-child{color:var(--primario)}
+.logo-hero{text-align:center;margin-bottom:12px}
+.logo-central{width:125px;height:125px;object-fit:contain;filter:drop-shadow(0 0 25px rgba(239,35,55,0.5));animation:brilloLogo 3s infinite}
+@keyframes brilloLogo{0%,100%{filter:drop-shadow(0 0 15px rgba(239,35,55,0.4)) brightness(1)}50%{filter:drop-shadow(0 0 30px rgba(239,35,55,0.8)) brightness(1.1)}}
+
+.nav-desktop{display:flex;gap:14px}.nav-desktop a{color:#fff;opacity:0.7;text-decoration:none;font-size:0.7rem;font-weight:700}
+.btn-header{background:linear-gradient(180deg,var(--primario-claro),var(--primario));color:#000;font-weight:900;font-size:0.75rem;padding:8px 14px;border-radius:100px;text-decoration:none;box-shadow:0 0 15px rgba(239,35,55,0.4)}
+.menu-mobile{display:none;background:none;border:none;color:var(--primario);font-size:1.4rem}
+.main-container{width:92%;max-width:1250px;margin:22px auto;background:linear-gradient(180deg,rgba(18,18,18,0.85),rgba(7,7,7,0.95));border:1px solid rgba(239,35,55,0.2);border-radius:20px;padding:32px 28px 20px;box-shadow:0 0 60px rgba(0,0,0,0.8)}
+.titulo-empresa{font-family:'Inter',sans-serif;text-align:center;font-size:2.4rem;font-weight:900;background:linear-gradient(180deg,#FFFFFF,var(--primario),#A80F20);background-clip:text;color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(239,35,55,0.3))}
+.subtitulo{text-align:center;margin-top:6px;font-size:0.95rem;font-weight:700;color:#FFF}
+.linea-fina{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px;opacity:0.6}.linea-fina span{height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--primario),transparent);display:block}.linea-fina p{font-size:0.75rem}
+.foto-card{margin:22px auto 0;max-width:520px;border-radius:18px;padding:3px;background:linear-gradient(145deg,#F5F5F5,#EF2337,#A80F20);box-shadow:0 12px 36px rgba(239,35,55,0.28)}.foto-card img{width:100%;height:auto;max-height:620px;object-fit:contain;border-radius:15px;display:block}
+.galeria-local{margin-top:28px}.grid-galeria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px auto 0;max-width:820px}.foto-interior{overflow:hidden;margin:0;border:1px solid rgba(239,35,55,0.25);border-radius:14px;background:rgba(8,8,8,0.9)}.foto-interior img{display:block;width:100%;height:360px;object-fit:contain;background:#080808}.foto-interior figcaption{padding:10px;text-align:center;font-size:0.75rem;color:var(--primario-claro)}
+.titulo-servicios{text-align:center;margin-top:28px;font-weight:800;font-size:1rem;color:var(--primario-claro)}
+.grid-servicios{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.card-serv{background:linear-gradient(180deg,rgba(25,25,25,0.9),rgba(8,8,8,0.9));border:1px solid rgba(239,35,55,0.18);border-radius:14px;padding:14px 10px;text-align:center;transition:0.3s}.card-serv:hover{transform:translateY(-4px);border-color:var(--primario)}
+.card-serv .icono{width:52px;height:52px;margin:0 auto 8px;background:radial-gradient(circle at 30% 30%, #1C1C1C, #101010);border:1px solid rgba(239,35,55,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+.card-serv b{display:block;font-size:0.58rem;font-weight:800;line-height:1.2;min-height:28px}.card-serv p{font-size:0.58rem;opacity:0.55;margin-top:4px}
+.footer-call{margin-top:24px;background:linear-gradient(90deg, #111111, #1B1B1B, #111111);border-top:1px solid rgba(239,35,55,0.25);border-radius:0 0 14px 14px;margin-left:-28px;margin-right:-28px;margin-bottom:-20px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}.footer-call p{font-size:0.7rem;font-weight:800;color:var(--primario-claro)}
+.btn-llamar{background:linear-gradient(180deg,var(--primario-claro),var(--primario));color:#000;font-weight:900;text-align:center;padding:8px 28px;border-radius:100px;text-decoration:none;line-height:1.1;font-size:0.75rem;box-shadow:0 0 18px rgba(239,35,55,0.4)}.direccion-final{text-align:center;margin-top:18px;font-size:0.68rem;opacity:0.5}
+.nav-mobile{display:none;position:fixed;top:70px;left:5%;right:5%;background:#101010;border:1px solid var(--primario);border-radius:14px;padding:12px;flex-direction:column;gap:10px;z-index:999}.nav-mobile a{color:#fff;text-decoration:none;font-weight:700}.nav-mobile.show{display:flex}
+@media(max-width:768px){.nav-desktop,.btn-header{display:none}.menu-mobile{display:block}.titulo-empresa{font-size:1.45rem}.main-container{padding:18px 14px 16px;width:95%}.foto-card{max-width:420px}.foto-card img{height:auto;max-height:480px}.grid-servicios{grid-template-columns:1fr 1fr}.logo-central{width:95px;height:95px}.logo-img{width:110px;max-height:44px}.grid-galeria{grid-template-columns:1fr;max-width:520px}.foto-interior img{height:300px}.footer-call{flex-direction:column;text-align:center;margin-left:-14px;margin-right:-14px}.btn-llamar{width:90%}}
+
+
+
+/* Paleta clara en blanco y rosa suave, con rojo como acento de marca. */
+body{color:#302629;background:#FFF9F8}
+.bg-glow{background:radial-gradient(circle at 12% 20%,rgba(216,32,53,0.09) 0%,transparent 42%),radial-gradient(circle at 88% 75%,rgba(255,210,216,0.38) 0%,transparent 42%),#FFF9F8}
+.header{background:linear-gradient(120deg,#FFFFFF,#FFF0F2);border-color:rgba(216,32,53,0.22);box-shadow:0 8px 26px rgba(130,30,45,0.09)}
+.nav-desktop a{color:#3A3032;opacity:0.85}
+.main-container{background:linear-gradient(155deg,#FFFFFF 0%,#FFFDFD 55%,#FFF1F3 100%);border-color:rgba(216,32,53,0.18);box-shadow:0 16px 45px rgba(130,30,45,0.1)}
+.titulo-empresa{background-image:linear-gradient(180deg,#B8162A,var(--primario),#F0717F)}
+.subtitulo{color:#3A3032}
+.linea-fina{opacity:0.9}
+.foto-interior{background:#FFFFFF;border-color:rgba(216,32,53,0.2)}
+.foto-interior img{background:#FFF8F8}
+.foto-interior figcaption{color:#594247}
+.titulo-servicios{color:#B8162A}
+.card-serv{background:linear-gradient(150deg,#FFFFFF,#FFF1F3);border-color:rgba(216,32,53,0.16);color:#302629;box-shadow:0 5px 16px rgba(130,30,45,0.06)}
+.card-serv p{color:#65575A;opacity:1}
+.card-serv .icono{background:radial-gradient(circle at 30% 30%,#FFFFFF,#FFE5E8);color:#B8162A;border-color:rgba(216,32,53,0.22)}
+.footer-call{background:linear-gradient(100deg,#FFE9EC,#FFF5F6,#FFE9EC);border-top-color:rgba(216,32,53,0.2)}
+.footer-call p{color:#6F1D2A}
+.direccion-final{color:#514548;opacity:0.8}
+.nav-mobile{background:#FFFFFF;border-color:var(--primario);box-shadow:0 8px 24px rgba(130,30,45,0.12)}
+.nav-mobile a{color:#33292B}
+.main-container{background:linear-gradient(160deg,#FFFFFF 0%,#FFF0F2 42%,#FFE3E7 100%)}
+.titulo-servicios{padding:10px 14px;color:#8F1020;background:linear-gradient(90deg,#F8D6DB,#FFE9EC,#F8D6DB);border:1px solid rgba(143,16,32,0.22);border-radius:10px;font-size:1.05rem;text-shadow:none}
+.grid-servicios{gap:16px}
+.card-serv{background:linear-gradient(150deg,#FFFFFF 0%,#FFE9EC 100%);border:1px solid rgba(143,16,32,0.28);box-shadow:0 6px 18px rgba(100,20,32,0.1)}
+.card-serv b{color:#32151A;font-size:0.65rem}
+.card-serv p{color:#51363B;font-weight:600}
+.card-serv .icono{background:linear-gradient(145deg,#FFFFFF,#F8D6DB);color:#9E1528;border-color:rgba(143,16,32,0.3)}
+.footer-call{background:linear-gradient(100deg,#F8D6DB,#FFE9EC,#F8D6DB)}
+.footer-call p{color:#5B101B}
+.modelos-iphone{margin-top:28px}
+.iphone-ayuda{text-align:center;margin:8px 0 16px;color:#594247;font-size:0.85rem}
+.iphone-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1000px;margin:0 auto}
+.iphone-foto{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;padding:14px;border:1px solid rgba(143,16,32,0.25);border-radius:16px;background:linear-gradient(145deg,#FFFFFF,#FFE9EC);color:#32151A;font:inherit;font-weight:800;cursor:zoom-in;box-shadow:0 6px 18px rgba(100,20,32,0.08);transition:transform .2s,box-shadow .2s}
+.iphone-foto:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(100,20,32,0.14)}
+.iphone-foto img{display:block;width:100%;height:220px;object-fit:contain;border-radius:10px}
+.iphone-lightbox{position:fixed;inset:0;max-width:min(92vw,1000px);max-height:92vh;margin:auto;padding:48px 18px 18px;border:1px solid rgba(143,16,32,0.3);border-radius:18px;background:#FFFAFA;color:#32151A;box-shadow:0 20px 60px rgba(40,10,15,0.3)}
+.iphone-lightbox::backdrop{background:rgba(30,12,15,0.72);backdrop-filter:blur(4px)}
+.iphone-lightbox img{display:block;max-width:100%;max-height:72vh;margin:auto;object-fit:contain}
+.iphone-lightbox p{text-align:center;margin-top:12px;font-weight:800}
+.lightbox-cerrar{position:absolute;top:8px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:#F8D6DB;color:#701020;font-size:1.6rem;line-height:1;cursor:pointer}
+@media(max-width:768px){.iphone-grid{grid-template-columns:1fr;max-width:420px}.iphone-foto img{height:210px}}
+
+/* Toques de presentación para que la portada destaque más. */
+.main-container{position:relative;overflow:hidden}
+.hero-eyebrow{display:table;margin:2px auto 10px;padding:7px 13px;border:1px solid rgba(184,22,42,0.2);border-radius:999px;background:linear-gradient(90deg,#FFF1F3,#FFFFFF);color:#861627;font-size:0.68rem;font-weight:900;letter-spacing:0.12em}
+.hero-eyebrow span{display:inline-block;width:8px;height:8px;margin-right:6px;border-radius:50%;background:#D82035;box-shadow:0 0 0 4px rgba(216,32,53,0.1);vertical-align:1px}
+.titulo-empresa{font-size:clamp(2.8rem,7vw,4.5rem);letter-spacing:0.06em;filter:drop-shadow(0 8px 18px rgba(143,16,32,0.16))}
+.subtitulo{font-size:1.02rem;letter-spacing:0.12em}
+.hero-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0 8px}
+.hero-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 18px;border-radius:999px;text-decoration:none;font-size:0.74rem;font-weight:900;letter-spacing:0.04em;transition:transform .2s,box-shadow .2s}
+.hero-button:hover{transform:translateY(-2px)}
+.hero-button-primary{background:linear-gradient(115deg,#B8162A,#E93449);color:#FFFFFF;box-shadow:0 8px 18px rgba(184,22,42,0.22)}
+.hero-button-primary span{font-size:1rem}
+.hero-button-secondary{border:1px solid rgba(143,16,32,0.28);background:#FFFFFF;color:#761321}
+.foto-card{transition:transform .25s,box-shadow .25s}
+.foto-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(143,16,32,0.22)}
+.iphone-foto{min-height:290px}
+.iphone-foto img{transition:transform .25s}
+.iphone-foto:hover img{transform:scale(1.035)}
+@media(max-width:768px){.titulo-empresa{font-size:2.5rem}.subtitulo{font-size:0.82rem}.hero-actions{gap:9px}.hero-button{font-size:0.68rem;padding:0 14px}.iphone-foto{min-height:0}}
+
+.descripcion-tienda{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:start;gap:18px;max-width:980px;margin:24px auto 8px;padding:22px;border:1px solid rgba(143,16,32,0.2);border-left:4px solid #D82035;border-radius:16px;background:linear-gradient(130deg,#FFF0F2,#FFFFFF 70%);box-shadow:0 8px 22px rgba(100,20,32,0.07);color:#302629;text-align:left}
+.descripcion-icono{display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:linear-gradient(145deg,#B8162A,#E93449);font-size:1.7rem;box-shadow:0 8px 16px rgba(184,22,42,0.2)}
+.descripcion-etiqueta{margin:0 0 5px;color:#9E1528;font-size:0.68rem;font-weight:900;letter-spacing:0.12em}
+.descripcion-tienda h2{margin:0 0 9px;color:#32151A;font-family:'Inter',sans-serif;font-size:1.35rem}
+.descripcion-tienda p:not(.descripcion-etiqueta){margin-top:7px;color:#51363B;font-size:0.88rem;line-height:1.65}
+.horarios-comerciales{margin-top:30px}
+.horarios-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1000px;margin:18px auto 0}
+.horario-card{padding:18px;border:1px solid rgba(143,16,32,0.22);border-radius:15px;background:linear-gradient(145deg,#FFFFFF,#FFE9EC);color:#32151A;box-shadow:0 6px 18px rgba(100,20,32,0.08)}
+.horario-icono{display:grid;place-items:center;width:38px;height:38px;margin-bottom:10px;border-radius:12px;background:#F8D6DB;color:#9E1528;font-size:1.2rem;font-weight:900}
+.horario-card h4{margin-bottom:12px;font-family:'Inter',sans-serif;font-size:1rem;color:#761321}
+.horario-card p{display:flex;justify-content:space-between;gap:10px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(143,16,32,0.12);font-size:0.8rem;color:#51363B}
+.horario-card p strong{color:#32151A}
+.horario-cerrado{background:linear-gradient(145deg,#FFF5F6,#F8D6DB)}
+.foto-card{max-width:380px}
+.foto-card img{max-height:460px}
+@media(max-width:768px){.descripcion-tienda{grid-template-columns:46px minmax(0,1fr);gap:12px;padding:16px}.descripcion-icono{width:44px;height:44px;border-radius:13px;font-size:1.35rem}.descripcion-tienda h2{font-size:1.1rem}.descripcion-tienda p:not(.descripcion-etiqueta){font-size:0.82rem}.horarios-grid{grid-template-columns:1fr;max-width:520px}.horario-card{padding:16px}}
+@media(max-width:768px){.foto-card{max-width:300px}.foto-card img{max-height:360px}}
+
+.foto-titulo{margin:22px auto 0;text-align:center;color:#8F1020;font-family:'Inter',sans-serif;font-size:clamp(1.25rem,3vw,1.8rem);font-weight:900;letter-spacing:0.08em}
+.foto-card{margin-top:14px}
+.descripcion-tienda{margin-top:18px}
+.ubicacion-card{display:flex;align-items:center;gap:14px;max-width:760px;margin:30px auto 8px;padding:18px 22px;border:1px solid rgba(143,16,32,0.28);border-left:5px solid #D82035;border-radius:16px;background:linear-gradient(110deg,#F8D6DB,#FFF5F6 72%);box-shadow:0 9px 24px rgba(100,20,32,0.1);color:#32151A}
+.ubicacion-pin{display:grid;place-items:center;flex:0 0 46px;height:46px;border-radius:14px;background:linear-gradient(145deg,#B8162A,#E93449);font-size:1.35rem}
+.ubicacion-card h3{margin-bottom:5px;color:#8F1020;font-family:'Inter',sans-serif;font-size:0.82rem;letter-spacing:0.08em}
+.ubicacion-card .direccion-final{display:inline-block;margin:0;color:#32151A;font-size:1rem;font-weight:800;text-align:left;text-decoration:none;opacity:1}
+.ubicacion-card .direccion-final:hover{text-decoration:underline;text-decoration-color:#D82035;text-underline-offset:3px}
+.ubicacion-flecha{margin-left:auto;color:#9E1528;font-size:1.3rem;font-weight:900}
+.footer{margin:18px -28px -20px;padding:16px 20px;border-top:1px solid rgba(143,16,32,0.14);text-align:center;color:#69575B;font-size:0.7rem}
+.footer p+p{margin-top:5px}
+.interior-zoom{position:relative;display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.interior-zoom img{transition:transform .25s}
+.interior-zoom:hover img{transform:scale(1.04)}
+.interior-zoom:focus-visible{outline:3px solid #B8162A;outline-offset:3px;border-radius:12px}
+@media(max-width:768px){.ubicacion-card{gap:10px;margin-top:22px;padding:15px}.ubicacion-pin{flex-basis:40px;height:40px}.ubicacion-card .direccion-final{font-size:0.86rem}.ubicacion-flecha{font-size:1.1rem}.footer{margin-right:-14px;margin-left:-14px;margin-bottom:-16px}}
+
+/* Encabezado más visible; el archivo original del logo se conserva. */
+.header{min-height:112px;padding:10px 22px}
+.logo{display:flex;align-items:center;justify-content:center;flex:0 0 186px;width:186px;height:104px;padding:5px;border:2px solid rgba(216,32,53,0.58);border-radius:50%;background:linear-gradient(145deg,#FFFFFF,#FFE6E9);box-shadow:0 7px 20px rgba(130,30,45,0.14)}
+.logo-img{display:block;width:164px;height:90px;max-height:none;object-fit:contain;border-radius:8px;filter:drop-shadow(0 2px 5px rgba(20,10,10,0.14))}
+.nav-desktop{align-items:center;gap:10px}
+.nav-desktop a{padding:9px 7px;color:#302629;opacity:1;font-size:0.82rem;font-weight:900;letter-spacing:0.035em;text-decoration:none;transition:color .2s,background .2s}
+.nav-desktop a:hover{color:#A91529;background:#FFE5E8;border-radius:8px}
+.menu-mobile{padding:8px 12px;border:1px solid rgba(143,16,32,0.22);border-radius:12px;background:#FFE9EC;color:#8F1020;font-size:1.8rem;line-height:1}
+@media(max-width:768px){.header{min-height:86px;padding:8px 12px}.logo{flex-basis:142px;width:142px;height:80px;padding:4px}.logo-img{width:126px;height:68px}.menu-mobile{font-size:1.65rem}}
+
+/* Conserva el tamaño aumentado del logo y elimina el marco ovalado. */
+.header .logo{flex:0 0 auto;width:auto;height:auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+@media(max-width:768px){.header .logo{flex:0 0 auto;width:auto;height:auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}}
+
+/* Paleta alternativa: marfil, arena y terracota; solo ajustes de color. */
+:root{--primario:#B94335;--primario-claro:#F2E7D8;--secundario:#76695E;--negro:#F7F3EB}
+body{color:#332F2A;background:#F7F3EB}
+.bg-glow{background:radial-gradient(circle at 12% 20%,rgba(185,67,53,0.08) 0%,transparent 42%),radial-gradient(circle at 88% 75%,rgba(220,201,174,0.34) 0%,transparent 42%),#F7F3EB}
+.header{background:linear-gradient(120deg,#FFFEFC,#F4EADD);border-color:rgba(142,64,48,0.22);box-shadow:0 8px 26px rgba(82,59,43,0.09)}
+.nav-desktop a{color:#3A342E}
+.nav-desktop a:hover{color:#8B3329;background:#EEDFD0}
+.btn-header{background:linear-gradient(180deg,#F4EADD,#B94335);color:#2D211C;box-shadow:0 0 15px rgba(142,64,48,0.25)}
+.menu-mobile{border-color:rgba(142,64,48,0.25);background:#EFE1D2;color:#85382E}
+.main-container{background:linear-gradient(155deg,#FFFEFC 0%,#FBF7F0 55%,#F1E6D9 100%);border-color:rgba(142,64,48,0.18);box-shadow:0 16px 45px rgba(82,59,43,0.1)}
+.titulo-empresa{background-image:linear-gradient(180deg,#873B2E,#B94335,#D37A58);filter:drop-shadow(0 8px 18px rgba(111,58,42,0.15))}
+.subtitulo{color:#3A342E}
+.linea-fina span{background:linear-gradient(90deg,transparent,#B94335,transparent)}
+.foto-card{background:linear-gradient(145deg,#F4EADD,#B94335,#8B3329);box-shadow:0 12px 36px rgba(142,64,48,0.2)}
+.foto-card:hover{box-shadow:0 16px 40px rgba(111,58,42,0.2)}
+.foto-interior{background:#FFFEFC;border-color:rgba(142,64,48,0.22)}
+.foto-interior img{background:#F7F3EB}
+.foto-interior figcaption{color:#51473D}
+.titulo-servicios{color:#81372C;background:linear-gradient(90deg,#EBDDCC,#F7EFE5,#EBDDCC);border-color:rgba(142,64,48,0.2)}
+.card-serv{background:linear-gradient(150deg,#FFFEFC,#F1E6D9);border-color:rgba(142,64,48,0.22);color:#332F2A;box-shadow:0 6px 18px rgba(82,59,43,0.08)}
+.card-serv:hover{border-color:#B94335}
+.card-serv b{color:#302820}
+.card-serv p{color:#51473D}
+.card-serv .icono{background:linear-gradient(145deg,#FFFEFC,#EBDDCC);color:#913B2E;border-color:rgba(142,64,48,0.24)}
+.footer-call{background:linear-gradient(100deg,#EBDDCC,#F7EFE5,#EBDDCC);border-top-color:rgba(142,64,48,0.22)}
+.footer-call p{color:#64352B}
+.btn-llamar{background:linear-gradient(180deg,#F4EADD,#B94335);color:#2D211C;box-shadow:0 0 18px rgba(142,64,48,0.25)}
+.direccion-final{color:#4D443A}
+.nav-mobile{background:#FFFEFC;border-color:#B94335;box-shadow:0 8px 24px rgba(82,59,43,0.12)}
+.nav-mobile a{color:#332F2A}
+.descripcion-tienda{border-color:rgba(142,64,48,0.2);border-left-color:#B94335;background:linear-gradient(130deg,#EFE1D2,#FFFEFC 70%);box-shadow:0 8px 22px rgba(82,59,43,0.07);color:#332F2A}
+.descripcion-icono{background:linear-gradient(145deg,#913B2E,#C85C45);box-shadow:0 8px 16px rgba(142,64,48,0.18)}
+.descripcion-etiqueta{color:#873B2E}
+.descripcion-tienda h2{color:#302820}
+.descripcion-tienda p:not(.descripcion-etiqueta){color:#51473D}
+.horario-card{border-color:rgba(142,64,48,0.2);background:linear-gradient(145deg,#FFFEFC,#F1E6D9);color:#332F2A;box-shadow:0 6px 18px rgba(82,59,43,0.07)}
+.horario-icono{background:#EBDDCC;color:#873B2E}
+.horario-card h4{color:#81372C}
+.horario-card p{border-top-color:rgba(142,64,48,0.12);color:#51473D}
+.horario-card p strong{color:#332F2A}
+.horario-cerrado{background:linear-gradient(145deg,#F7EFE5,#EBDDCC)}
+.hero-eyebrow{border-color:rgba(142,64,48,0.2);background:linear-gradient(90deg,#F4EADD,#FFFEFC);color:#81372C}
+.hero-eyebrow span{background:#B94335;box-shadow:0 0 0 4px rgba(185,67,53,0.1)}
+.hero-button-primary{background:linear-gradient(115deg,#913B2E,#C84C3C);color:#FFFEFC;box-shadow:0 8px 18px rgba(142,64,48,0.2)}
+.hero-button-secondary{border-color:rgba(142,64,48,0.25);background:#FFFEFC;color:#81372C}
+.iphone-foto{border-color:rgba(142,64,48,0.22);background:linear-gradient(145deg,#FFFEFC,#F1E6D9);color:#332F2A;box-shadow:0 6px 18px rgba(82,59,43,0.07)}
+.iphone-foto:hover{box-shadow:0 10px 24px rgba(82,59,43,0.12)}
+.iphone-lightbox{border-color:rgba(142,64,48,0.28);background:#FFFEFC;color:#332F2A;box-shadow:0 20px 60px rgba(40,30,20,0.28)}
+.iphone-lightbox::backdrop{background:rgba(36,27,21,0.68)}
+.lightbox-cerrar{background:#EBDDCC;color:#81372C}
+.ubicacion-card{border-color:rgba(142,64,48,0.24);border-left-color:#B94335;background:linear-gradient(110deg,#EBDDCC,#F7EFE5 72%);box-shadow:0 9px 24px rgba(82,59,43,0.09);color:#332F2A}
+.ubicacion-pin{background:linear-gradient(145deg,#913B2E,#C85C45)}
+.ubicacion-card h3{color:#81372C}
+.ubicacion-card .direccion-final{color:#332F2A}
+.ubicacion-flecha{color:#873B2E}
+.footer{border-top-color:rgba(142,64,48,0.14);color:#65584E}
